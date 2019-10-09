@@ -1,0 +1,34 @@
+#Aplicaciones de las pilas en ciencias de la computacion
+#-Verificar balanceo de expresiones aritmeticas
+#-Administracion de llamadas a funciones en leng. de prog.
+#-Conversion de notaciones aritmeticas: infija, posfija y prefija
+#-Evaluar expresiones aritmeticas posfijas y prefijas
+#-Manejo de memoria en los S.O.
+#-Backtrocking(inteligencia artificial)
+#
+#
+#Algoritmo para cambiar de infija a posfija.
+#Dada una cadena que se presenta una expresion aritmetica.
+#Paso 1: Crea una pila y agrega al inicio un parentesis de apertura y a la
+#       cadena agregale un parentesis al final.
+#Paso 2: Recorre la cadena de izquierda a derecha y repite los pasos del 3 al 6
+#       para cada elemento de la cadena hasta que la pila este vacia
+#Paso 3: Si se encuentra un operando agregalo a la salida
+#Paso 4: Si se encuentra un parentesis de apertura agregalo a la pila
+#Paso 5: Si se encuentra un operador entonces
+#Paso 5.1: Haz un pop repetidamente sobre la pila y agrega el valor obtenido del pop a la
+#       salida y cada operador en el tope de la pila que tiene la misma prioridad o mayor que
+#       el operador encontrado
+#Paso 5.2: Agrega el operador a la pila
+#Paso 6: Si se encuentra un parentesis de cierre repentinamente
+#Paso 6.1: Haz un pop sobre la pila y agrega el valor sacado a la salida hasta que
+#       un parentesis de apertura sea encontrado en el tope de la pila
+#Paso 6.2: Elimina el parentesis de apertura de la pila
+#
+#
+#Algoritmo para evaluar una expresion matematica en notacion posfija
+#Considere una cadena de entrada en notacion posfija 
+#Paso 1: Para cada elemento(de izquierda a derecha) realizar lo siguiente
+#Paso 2: Si el elemento es un operador hacerle push a la pila de lo contrario declarar la variable
+#       o1 y hacer un pop sobre la pila, hacer un pop y agregarle a la variable o2 y por ultimo hacer
+#       un push de esta expresion: push(
