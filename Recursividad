@@ -1,0 +1,19 @@
+def numero_factorial(num):
+    if num == 0:
+        return 1
+    else:
+        num *= numero_factorial(num-1)
+        return num
+
+
+def suma_lista(lista):
+    if len(lista) == 0:
+        return False
+    else:
+        return lista.pop() + suma_lista(lista)
+
+
+def main():
+    print("Factorial de 7: ",numero_factorial(7))
+    print("Suma de lista: ",suma_lista([3,5,2,1]))
+main()
